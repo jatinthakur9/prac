@@ -20,7 +20,7 @@ class Stacktask extends StatelessWidget {
               height: 700,
               width: 500,
               color: const Color.fromARGB(31, 3, 2, 2),
-            ),
+            ), 
             Positioned(
               top: 120,
               left: 75,
