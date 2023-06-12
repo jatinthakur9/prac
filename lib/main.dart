@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:prac/appbar.dart';
 import 'package:prac/appbarself.dart';
+import 'package:prac/pracstack8june.dart';
+import 'package:prac/stacktask8june.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: appbarself(),
+      home: Stacktask(),
     );
   }
 }
