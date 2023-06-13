@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:prac/june12/rectangle.dart';
-import 'package:prac/june12/ringlight.dart';
-import 'package:prac/june12/ringlightwithstack.dart';
+
+import 'package:prac/june12/bottomnavself.dart';
+
+
 
 void main() {
   runApp(const MyApp());
@@ -20,6 +21,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const RinglightWithOUtStack());
+        home: BottomNavSelf());
   }
 }
