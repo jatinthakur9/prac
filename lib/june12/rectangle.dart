@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:prac/8thjune/appbarself.dart';
 
-class Rectangle extends StatelessWidget {
-  const Rectangle({super.key});
+class Rectangle12 extends StatelessWidget {
+  const Rectangle12({super.key});
 
   @override
   Widget build(BuildContext context) {

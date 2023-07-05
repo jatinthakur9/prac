@@ -1,7 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:prac/8thjune/stacktask8june.dart';
+import 'package:prac/june12/rectangle.dart';
+import 'package:prac/june12/ringlight.dart';
+import 'package:prac/june12/ringlightwithstack.dart';
 
-class BottomNavSelf extends StatelessWidget {
-  const BottomNavSelf({super.key});
+class BottomNavSelf extends StatefulWidget {
+  BottomNavSelf({super.key});
+
+  @override
+  State<BottomNavSelf> createState() => _BottomNavSelfState();
+}
+
+class _BottomNavSelfState extends State<BottomNavSelf> {
+  int _currentIndex = 0;
+  List pages = [Rectangle12(), Stacktask(), Ringlight()];
 
   @override
   Widget build(BuildContext context) {
@@ -9,23 +21,43 @@ class BottomNavSelf extends StatelessWidget {
       appBar: AppBar(
         title: const Text("BottomNavigationBar"),
       ),
-      bottomNavigationBar: BottomNavigationBar(items: const [
-        BottomNavigationBarItem(
-          icon: Icon(Icons.abc_rounded),
-          label: 'FIRST ONE',
-          backgroundColor: Color.fromARGB(61, 182, 149, 3),
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.access_alarm),
-          label: 'FIRST ONE',
-          backgroundColor: Color.fromARGB(61, 0, 225, 255),
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.account_box_sharp),
-          label: 'FIRST ONE',
-          backgroundColor: Color.fromARGB(61, 67, 0, 252),
-        ),
-      ]),
+      body: pages[_currentIndex],
+      bottomNavigationBar: Stack(
+        children: [
+          Card(
+            margin: EdgeInsets.zero,
+            elevation: 8.0,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+                topRight: Radius.circular(16.0),
+                topLeft: Radius.circular(16.0),
+              ),
+            ),
+            child: BottomNavigationBar(
+              currentIndex: _currentIndex,
+              onTap: (index) {
+                setState(() {
+                  _currentIndex = index;
+                });
+              },
+              items: [
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.home),
+                  label: 'Home',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.search),
+                  label: 'Search',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.person),
+                  label: 'Profile',
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
