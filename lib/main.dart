@@ -23,3 +23,7 @@ class MyApp extends StatelessWidget {
         home: Loginscreen());
   }
 }
+
+
+git config --global user.name "jatin_thakur9"
+git config --global user.email "tjatin29@gmail.com"
