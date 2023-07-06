@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:prac/5july/loginscreen.dart';
-
-import 'package:prac/june12/bottomnavself.dart';
+import 'package:prac/july/5july/loginscreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +21,3 @@ class MyApp extends StatelessWidget {
         home: Loginscreen());
   }
 }
-
-
-git config --global user.name "jatin_thakur9"
-git config --global user.email "tjatin29@gmail.com"
