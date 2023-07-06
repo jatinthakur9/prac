@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:prac/july/5july/loginscreen.dart';
+import 'package:prac/july/6thjuly/healthkangaroosettings.dart';
+import 'package:prac/july/6thjuly/listviewww.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,6 +20,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: Loginscreen());
+        home: Healthyy());
   }
 }
