@@ -23,7 +23,7 @@ class _statesState extends State<states> {
                 x = !x;
               });
             },
-            child: Text('sUBMIT mAGIC'),
+            child: Text('SUBMIT mAGIC'),
           )
         ]),
       ),
