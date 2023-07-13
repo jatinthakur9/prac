@@ -8,7 +8,7 @@ class Whatsappfront extends StatefulWidget {
 }
 
 List nameess = [
-  'Jatin',
+  'jatin',
   'Rahul',
   'Ishan',
   'Ankush ',
@@ -45,7 +45,7 @@ List photos = [
   'assets/ana-itonishvili-Fyl8sMC2j2Q-unsplash.jpg',
 ];
 List textss = [
-  'hii',
+  'Jai shree ram',
   'okay',
   'idk',
   'hahaha',
