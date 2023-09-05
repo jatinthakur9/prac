@@ -32,11 +32,12 @@ class _bottomNavigatorState extends State<bottomNavigator> {
       ),
       body: Column(children: []),
       bottomNavigationBar: BottomNavigationBar(
-          items:  <BottomNavigationBarItem>[
+          items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-                icon: Icon(Icons.home),
-                label: 'Home',
-                backgroundColor: Colors.green),
+              icon: Icon(Icons.home),
+              label: 'Home',
+              // backgroundColor: Colors.green,
+            ),
             BottomNavigationBarItem(
                 icon: Icon(Icons.search),
                 label: 'Search',

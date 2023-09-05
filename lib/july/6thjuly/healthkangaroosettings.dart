@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:prac/july/5july/loginscreen.dart';
 import 'package:prac/june/8thjune/appbarself.dart';
@@ -8,6 +9,8 @@ class Healthyy extends StatefulWidget {
   @override
   State<Healthyy> createState() => _HealthyyState();
 }
+
+var user = FirebaseAuth.instance.currentUser;
 
 List iconnss = [
   Icon(
@@ -177,7 +180,7 @@ class _HealthyyState extends State<Healthyy> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Amit Kumar ',
+                        user!.uid.toString(),
                         style: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold),
                       ),
